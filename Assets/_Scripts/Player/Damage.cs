@@ -14,6 +14,8 @@ namespace _Scripts.Player
         public GameObjectList enemyList;
 
         public SoCustomEvent onDamage;
+
+        public SoCustomEvent onGameOver;
         
         private void OnCollisionEnter(Collision other)
         {
@@ -22,6 +24,8 @@ namespace _Scripts.Player
             if (!enemyList.items.Contains(other.rigidbody.gameObject)) return;
 
             playerHealth.soValue.value -= 10f;
+
+            if (playerHealth.Value <= 0f) onGameOver.Raise();
             
             onDamage.Raise();
         }

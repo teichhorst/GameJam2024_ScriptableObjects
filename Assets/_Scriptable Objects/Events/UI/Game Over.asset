@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0099d608efa94997852aa3a3b9b818ad, type: 3}
-  m_Name: Slow Down Player On Hit
+  m_Name: Game Over
   m_EditorClassIdentifier: 

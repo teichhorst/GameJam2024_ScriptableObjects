@@ -12,6 +12,8 @@ namespace _Scripts.Player
         public FloatReference playerSpeedMax;
         public FloatReference playerSpeedRecoveryRate;
 
+        private bool _isDazed;
+        
         private void Awake()
         {
             playerSpeed.soValue.value = playerSpeedMax.Value;
@@ -19,18 +21,24 @@ namespace _Scripts.Player
 
         public void DazePlayer()
         {
-            Debug.Log("Dazed");
             playerSpeed.soValue.value = 0;
+            
+            if (_isDazed) return;
+            
             StartCoroutine(Recover());
         }
 
         public IEnumerator Recover()
         {
+            _isDazed = true;
+            
             while (playerSpeed.Value < playerSpeedMax.Value)
             {
                 yield return null;
                 playerSpeed.soValue.value = Mathf.Clamp(playerSpeed.soValue.value + playerSpeedRecoveryRate.Value * Time.deltaTime, 0, playerSpeedMax.Value);
             }
+            
+            _isDazed = false;
         }
     }
 }

@@ -177,7 +177,7 @@ MonoBehaviour:
     UseConstant: 0
     constantValue: 0
     soValue: {fileID: 11400000, guid: 22ae466fbda1b4b4aba8186c7832aac0, type: 2}
-  enemyList: {fileID: 11400000, guid: 2b99f432d8c65d34b9d900558fbc4966, type: 2}
+  enemyList: {fileID: 11400000, guid: eeef481475aad4d488a98bf14177f18a, type: 2}
   onDamage: {fileID: 11400000, guid: 45783919a2c9ad84ca68f17e6d3c55ea, type: 2}
   onGameOver: {fileID: 11400000, guid: 520f287043c580343839a3832493cf42, type: 2}
 --- !u!114 &738695212758636560

@@ -1,4 +1,6 @@
-﻿using _Scriptable_Objects.Base;
+﻿using System.Linq;
+using _Scriptable_Objects.Base;
+using _Scriptable_Objects.Enemies;
 using _Scriptable_Objects.Events;
 using _Scriptable_Objects.Item_Lists;
 using _Scripts.Base_References;
@@ -11,7 +13,7 @@ namespace _Scripts.Player
     {
         public FloatReference playerHealth;
 
-        public GameObjectList enemyList;
+        public ActiveDictionary enemyList;
 
         public SoCustomEvent onDamage;
 
@@ -21,9 +23,11 @@ namespace _Scripts.Player
         {
             if (other.rigidbody == null) return;
 
-            if (!enemyList.items.Contains(other.rigidbody.gameObject)) return;
+            Enemy enemy = enemyList.Enemies.FirstOrDefault(x => x.Key == other.rigidbody.gameObject).Value;
+            
+            if (enemy == null) return;
 
-            playerHealth.soValue.value -= 10f;
+            playerHealth.soValue.value -= enemy.damage;
 
             if (playerHealth.Value <= 0f) onGameOver.Raise();
             

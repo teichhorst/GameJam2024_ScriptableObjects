@@ -19,8 +19,6 @@ namespace _Scripts.Audio
         {
             if (canOnlyPlayOnce && _hasPlayed) return;
             
-            Debug.LogFormat("Playing clip from {0}", audioClipList.name);
-            
             audioSource.clip = audioClipList.GetRandomClip();
             
             if (useRandomPitch) audioSource.pitch = audioClipList.GetRandomPitch();

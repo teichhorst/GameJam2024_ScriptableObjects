@@ -8,14 +8,14 @@ namespace _Scripts.UI
 {
     public class ImageFiller : MonoBehaviour
     {
-        public FloatReference ReferenceValue;
-        public FloatReference MaxValue;
+        public FloatReference referenceValue;
+        public FloatReference maxValue;
 
         public Image meterImage;
 
         private void Update()
         {
-            meterImage.fillAmount = Mathf.Clamp01(ReferenceValue.Value / MaxValue.Value);
+            meterImage.fillAmount = Mathf.Clamp01(referenceValue.Value / maxValue.Value);
         }
     }
 }

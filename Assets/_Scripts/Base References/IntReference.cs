@@ -1,16 +1,15 @@
-﻿using _Scriptable_Objects.Base;
+﻿using System;
+using _Scriptable_Objects.Base;
+using UnityEngine.Serialization;
 
 namespace _Scripts.Base_References
 {
-    public class IntReference
+    [Serializable]
+    public class IntReference : BaseReference
     {
-        public bool UseConstant = true;
-        public float ConstantValue;
-        public IntValue Variable;
+        public float constantValue;
+        public IntValue soValue;
         
-        public float Value
-        {
-            get { return UseConstant ? ConstantValue : Variable.value; }
-        }
+        public float Value => UseConstant ? constantValue : soValue.value;
     }
 }

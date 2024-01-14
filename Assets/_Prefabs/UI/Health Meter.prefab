@@ -234,6 +234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1607133068669952216}
+  - component: {fileID: 8745666814663544874}
   m_Layer: 5
   m_Name: Health Meter
   m_TagString: Untagged
@@ -263,3 +264,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -468}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8745666814663544874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8067475737619492956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e09c3f43e0417484552e371b7c6046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  referenceValue:
+    UseConstant: 0
+    constantValue: 0
+    soValue: {fileID: 11400000, guid: 22ae466fbda1b4b4aba8186c7832aac0, type: 2}
+  maxValue:
+    UseConstant: 0
+    constantValue: 0
+    soValue: {fileID: 11400000, guid: 12b05c6c615f88b4288b186bb53786c0, type: 2}
+  meterImage: {fileID: 3657204644987620007}

@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace _Scriptable_Objects.Events
 {
-    public class CustomEvent : ScriptableObject
+    [CreateAssetMenu(fileName = "New Custom Event", menuName = "Scriptable Object/Custom Event")]
+    public class SoCustomEvent : ScriptableObject
     {
-        private List<CustomEventListener> _listeners = new List<CustomEventListener>();
+        private List<SoCustomEventListener> _listeners = new List<SoCustomEventListener>();
         
-            
         public void Raise()
         {
             for (int i = _listeners.Count - 1; i >= 0; i--)
@@ -17,12 +17,12 @@ namespace _Scriptable_Objects.Events
             }
         }
         
-        public void RegisterListener(CustomEventListener listener)
+        public void RegisterListener(SoCustomEventListener listener)
         {
             _listeners.Add(listener);
         }
         
-        public void UnregisterListener(CustomEventListener listener)
+        public void UnregisterListener(SoCustomEventListener listener)
         {
             _listeners.Remove(listener);
         }

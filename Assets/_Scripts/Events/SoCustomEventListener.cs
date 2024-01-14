@@ -1,22 +1,23 @@
 ﻿using _Scriptable_Objects.Events;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace _Scripts.Events
 {
-    public class CustomEventListener : MonoBehaviour
+    public class SoCustomEventListener : MonoBehaviour
     {
-        public CustomEvent customEvent;
+        [FormerlySerializedAs("customEvent")] public SoCustomEvent soCustomEvent;
         public UnityEvent eventResponse;
         
         private void OnEnable()
         {
-            customEvent.RegisterListener(this);
+            soCustomEvent.RegisterListener(this);
         }
         
         private void OnDisable()
         {
-            customEvent.UnregisterListener(this);
+            soCustomEvent.UnregisterListener(this);
         }
         
         public void OnEventRaised()

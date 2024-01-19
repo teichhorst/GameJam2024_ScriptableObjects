@@ -9,10 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5772747075351584940}
-  - component: {fileID: 4340947374171248433}
-  - component: {fileID: 421359754009750689}
   - component: {fileID: 6821711476274046158}
-  - component: {fileID: 1331122532690124460}
   m_Layer: 5
   m_Name: Game Over
   m_TagString: Untagged
@@ -41,60 +38,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4340947374171248433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6600699987642271861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c105c31f0cfe4e298cea7343c64bca1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soCustomEvent: {fileID: 11400000, guid: 520f287043c580343839a3832493cf42, type: 2}
-  eventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 421359754009750689}
-        m_TargetAssemblyTypeName: _Scripts.UI.ShowGameOver, Assembly-CSharp
-        m_MethodName: StartGameOverSequence
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1331122532690124460}
-        m_TargetAssemblyTypeName: _Scripts.Audio.PlayAudioClipFromList, Assembly-CSharp
-        m_MethodName: PlayClip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &421359754009750689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6600699987642271861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89ec959954724886892421c6cd50a177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverText: {fileID: 7428699892476311206}
-  gameOverBackground: {fileID: 6297236870638677144}
 --- !u!82 &6821711476274046158
 AudioSource:
   m_ObjectHideFlags: 0
@@ -191,22 +134,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1331122532690124460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6600699987642271861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9768e2ad4a95413ea846dc7d61a27787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioClipList: {fileID: 11400000, guid: 247583e0ef49a834c836de6d0ff11ee3, type: 2}
-  audioSource: {fileID: 6821711476274046158}
-  useRandomPitch: 0
-  canOnlyPlayOnce: 1
 --- !u!1 &6958016671042084409
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3392389110367808328}
   - component: {fileID: 6921449742025355452}
   - component: {fileID: 742069961223976454}
-  - component: {fileID: 3430941951209696524}
   m_Layer: 0
   m_Name: Enemy Capsule
   m_TagString: Untagged
@@ -136,17 +135,3 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3430941951209696524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5371608319137177332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74628fa40ebe434d8646d5df5f7a3fbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dictionary: {fileID: 11400000, guid: eeef481475aad4d488a98bf14177f18a, type: 2}
-  enemy: {fileID: 11400000, guid: 83e7d60318103f84cb6750debe4a5fbc, type: 2}

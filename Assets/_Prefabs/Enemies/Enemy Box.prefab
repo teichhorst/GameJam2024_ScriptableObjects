@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3392389110367808328}
   - component: {fileID: 1203324667820561568}
   - component: {fileID: 6921449742025355452}
-  - component: {fileID: 6195139381345306985}
   m_Layer: 0
   m_Name: Enemy Box
   m_TagString: Untagged
@@ -134,17 +133,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6195139381345306985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5371608319137177332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74628fa40ebe434d8646d5df5f7a3fbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dictionary: {fileID: 11400000, guid: eeef481475aad4d488a98bf14177f18a, type: 2}
-  enemy: {fileID: 11400000, guid: 36cdff47c6956a24fbfa55ee100308ef, type: 2}

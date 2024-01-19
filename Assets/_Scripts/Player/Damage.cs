@@ -16,7 +16,6 @@ namespace _Scripts.Player
         public ActiveDictionary enemyList;
 
         public SoCustomEvent onDamage;
-
         public SoCustomEvent onGameOver;
         
         private void OnCollisionEnter(Collision other)

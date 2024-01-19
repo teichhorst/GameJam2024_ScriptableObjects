@@ -13,5 +13,10 @@ MonoBehaviour:
   m_Name: Player Damage Clips
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: a21dfe7de70a134428c4c730740c24fb, type: 3}
+  - {fileID: 8300000, guid: aee8db4c3392b924b9140d4d92f20875, type: 3}
+  - {fileID: 8300000, guid: b191dfcfbbf56cb4ba7ca414c6e86d71, type: 3}
+  - {fileID: 8300000, guid: 2a23aecbf075883468098e2da4b76bb7, type: 3}
+  - {fileID: 8300000, guid: 1e1822072d7a37e4481c9b187a11fd4c, type: 3}
+  - {fileID: 8300000, guid: bf564297bd602a84baa783a24e548ef0, type: 3}
+  - {fileID: 8300000, guid: 1f685e6f9d5e4a44189af402cc034882, type: 3}
   pitchRange: {x: 0.91, y: 1.25}

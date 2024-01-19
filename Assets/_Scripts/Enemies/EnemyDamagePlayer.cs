@@ -10,8 +10,6 @@ namespace _Scripts.Enemies
         
         private void OnCollisionEnter(Collision other)
         {
-            //check if we hit the player
-            
             playerHealth.soValue.value -= enemyDamage.Value;
         }
     }

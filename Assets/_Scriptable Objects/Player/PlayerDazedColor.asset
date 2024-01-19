@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce126ad6ae846f2b45d4d315e2dfbc6, type: 3}
   m_Name: PlayerDazedColor
   m_EditorClassIdentifier: 
-  value: {r: 0.90588236, g: 0.2, b: 0.2, a: 0}
+  value: {r: 1, g: 0.18142563, b: 0, a: 0}

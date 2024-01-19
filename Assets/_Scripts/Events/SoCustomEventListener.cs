@@ -7,7 +7,7 @@ namespace _Scripts.Events
 {
     public class SoCustomEventListener : MonoBehaviour
     {
-        [FormerlySerializedAs("customEvent")] public SoCustomEvent soCustomEvent;
+        public SoCustomEvent soCustomEvent;
         public UnityEvent eventResponse;
         
         private void OnEnable()
